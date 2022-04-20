@@ -19,6 +19,8 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 header h2 {
@@ -83,8 +85,7 @@ nav {
 .hamburger {
   margin-left: auto;
   cursor: pointer;
-  background: #f3f3f3;
-  padding: .8rem;
+  padding: .5rem;
 }
 
 .hamburger .fa-bars {
@@ -124,6 +125,10 @@ ul {
 }
 
 @media screen and (min-width: 700px) {
+  header {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
   .hamburger {
     display: none;
   }
@@ -131,6 +136,8 @@ ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     gap: 5em;
     width: 100%;
     margin-inline: auto;
@@ -142,13 +149,8 @@ ul {
     gap: 1em;
     margin-inline: auto;
   }
-  .left-nav > * {
-    -webkit-transition: all ease .5s;
-    transition: all ease .5s;
-  }
   .left-nav > *:hover, .left-nav > *:active {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    color: #0051ff;
   }
   .right-nav {
     display: -webkit-box;
