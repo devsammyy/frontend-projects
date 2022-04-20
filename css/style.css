@@ -12,7 +12,7 @@ body {
 
 header {
   background: #ffffff;
-  padding: 1.5rem;
+  padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,12 +29,66 @@ header h2 .go {
   color: #0051ff;
 }
 
+.down-nav {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  background: #ffffff;
+  width: 100%;
+  padding: 1rem;
+  -webkit-box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.9);
+          box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.9);
+}
+
+.down-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5rem;
+  list-style: none;
+}
+
+.down-nav ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.2rem;
+}
+
+.down-nav ul li a p {
+  font-size: 10px;
+  margin-top: 2px;
+}
+
 nav {
   display: none;
 }
 
 .hamburger {
   margin-left: auto;
+  cursor: pointer;
+  background: #f3f3f3;
+  padding: .8rem;
+}
+
+.hamburger .fa-bars {
+  font-size: 1.4rem;
 }
 
 .close {

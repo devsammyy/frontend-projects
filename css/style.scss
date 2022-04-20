@@ -11,7 +11,7 @@ body {
 
 header {
     background: #ffffff;
-    padding: 1.5rem;
+    padding: 1rem;
     display: flex;
     align-items: center;
 
@@ -25,12 +25,52 @@ header {
 
 }
 
+.down-nav {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    background: #ffffff;
+    width: 100%;
+    padding: 1rem;
+    box-shadow: 8px 8px 15px rgba($color: #000000, $alpha: .9);
+
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+        list-style: none;
+
+        li {
+            a {
+
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 1.2rem;
+
+                p {
+                    font-size: 10px;
+                    margin-top: 2px;
+                }
+            }
+        }
+    }
+}
 nav {
     display: none;
 }
 
 .hamburger {
     margin-left: auto;
+    .fa-bars {
+        font-size: 1.4rem;
+    }
+
+    cursor: pointer;
+    background: #f3f3f3;
+    padding: .8rem;
 }
 
 .close {
