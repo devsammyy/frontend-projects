@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: #f4f4f4;
+  font-family: "Poppins";
+}
+
+header {
+  background: #ffffff;
+  padding: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header h2 {
+  font-weight: 800;
+}
+
+header h2 .go {
+  color: #0051ff;
+}
+
+nav {
+  display: none;
+}
+
+.hamburger {
+  margin-left: auto;
+}
+
+.close {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: #002112;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.secondary {
+  border: 1px solid #0051ff;
+  border-radius: 2rem;
+  padding-inline: .5em;
+  font-weight: 900;
+  -webkit-transition: ease .5s;
+  transition: ease .5s;
+}
+
+.secondary:hover {
+  background-color: #0051ff;
+}
+
+.secondary:hover a {
+  color: #ffffff;
+}
+
+ul {
+  list-style: none;
+}
+
+@media screen and (min-width: 700px) {
+  .hamburger {
+    display: none;
+  }
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 5em;
+    width: 100%;
+    margin-inline: auto;
+  }
+  .left-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1em;
+    margin-inline: auto;
+  }
+  .left-nav > * {
+    -webkit-transition: all ease .5s;
+    transition: all ease .5s;
+  }
+  .left-nav > *:hover, .left-nav > *:active {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  .right-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1em;
+    margin-left: auto;
+  }
+}
+/*# sourceMappingURL=style.css.map */
