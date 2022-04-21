@@ -1,3 +1,10 @@
+@media screen and (min-width: 280px) {
+    .down-nav {
+        ul {
+            gap: 1.5rem;
+        }
+    }
+}
 @media screen and (min-width: 768px) {
     header {
         justify-content: space-around;
@@ -44,4 +51,7 @@
         gap: 1em;
         margin-left: auto;
     }
+.down-nav {
+    display: none;
+}
 }
