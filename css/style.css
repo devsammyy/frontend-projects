@@ -21,10 +21,16 @@ header {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  min-height: 5rem;
 }
 
 header h2 {
+  font-family: 'Montserrat';
   font-weight: 800;
+}
+
+header h2::after {
+  content: '\f100';
 }
 
 header h2 .go {
@@ -124,7 +130,7 @@ ul {
   list-style: none;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
   header {
     -ms-flex-pack: distribute;
         justify-content: space-around;

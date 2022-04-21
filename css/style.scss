@@ -15,9 +15,14 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    min-height: 5rem;
 
     h2 {
+        font-family: 'Montserrat';
         font-weight: 800;
+        &::after {
+            content: '\f100';
+        }
 
         .go {
             color: rgb(0, 81, 255);
@@ -52,6 +57,7 @@ header {
                 font-size: 1.2rem;
 
                 p {
+                    // font-family: 'priola';
                     font-size: 10px;
                     margin-top: 2px;
                 }
@@ -104,7 +110,7 @@ ul {
     list-style: none;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
 header {
     justify-content: space-around;
 }
