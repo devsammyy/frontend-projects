@@ -1,0 +1,27 @@
+$primary: rgb(0, 81, 255);
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Montserrat';
+
+}
+
+
+ul {
+    list-style: none;
+}
+
+nav {
+    display: none;
+}
+
+.close {
+    display: none;
+}
+
+.container {
+    min-width: 100%;
+    padding: .5em;
+}
