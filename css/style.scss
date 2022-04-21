@@ -1,36 +1,25 @@
+@import 'header';
+@import 'header';
+@import 'mixins';
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Arvo';
+
+}
+
 body {
     background: #f4f4f4;
     font-family: "Poppins";
 }
-
-header {
-    background: #ffffff;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    min-height: 5rem;
-
-    h2 {
-        font-family: 'Montserrat';
-        font-weight: 800;
-        &::after {
-            content: '\f100';
-        }
-
-        .go {
-            color: rgb(0, 81, 255);
-        }
-    }
-
-}
-
 .down-nav {
     display: block;
     position: absolute;
@@ -38,8 +27,7 @@ header {
     background: #ffffff;
     width: 100%;
     padding: 1rem;
-    box-shadow: 8px 8px 15px rgba($color: #000000, $alpha: .9);
-
+    @include box-shadow(0px, 0px, 9px);
     ul {
         display: flex;
         justify-content: center;
@@ -109,45 +97,4 @@ a {
 ul {
     list-style: none;
 }
-
-@media screen and (min-width: 768px) {
-header {
-    justify-content: space-around;
-}
-    .hamburger {
-        display: none;
-
-    }
-
-    nav {
-        display: flex;
-        justify-content: space-around;
-        gap: 5em;
-        width: 100%;
-        margin-inline: auto;
-    }
-
-
-    .left-nav {
-        display: flex;
-        gap: 1em;
-        margin-inline: auto;
-
-        >* {
-            // transition: all ease .5s;
-
-            &:hover,
-            &:active {
-                color: rgb(0, 81, 255);
-
-            }
-
-        }
-    }
-
-    .right-nav {
-        display: flex;
-        gap: 1em;
-        margin-left: auto;
-    }
-}
+@import 'media';

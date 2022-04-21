@@ -1,0 +1,4 @@
+@mixin box-shadow($vertical, $horizontal, $blur-radius) {
+    box-shadow: $vertical $horizontal $blur-radius rgba($color: #000000, $alpha: .3);
+
+}

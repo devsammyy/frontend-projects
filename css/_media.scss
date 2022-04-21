@@ -1,0 +1,47 @@
+@media screen and (min-width: 768px) {
+    header {
+        justify-content: space-around;
+    }
+
+    .hamburger {
+        display: none;
+
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        gap: 5em;
+        width: 100%;
+        margin-inline: auto;
+    }
+
+
+    .left-nav {
+        display: flex;
+        justify-content: center;
+        gap: 1em;
+        min-width: 60%;
+        margin-inline: auto;
+
+        >* {
+            // transition: all ease .5s;
+
+            &:hover,
+            &:active {
+                a {
+                    transition: all ease .5s;
+                    color: rgb(0, 81, 255);
+                }
+
+            }
+
+        }
+    }
+
+    .right-nav {
+        display: flex;
+        gap: 1em;
+        margin-left: auto;
+    }
+}
