@@ -26,7 +26,7 @@ body {
     bottom: 0;
     background: #ffffff;
     min-width: 100%;
-    padding: 1rem;
+    padding-block: 1rem;
     @include box-shadow(0px, 0px, 9px);
     ul {
         display: flex;
