@@ -65,17 +65,21 @@ h4 {
 body {
   background: #f4f4f4;
   font-family: "Poppins";
-  min-width: 100%;
   min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 footer {
-  position: absolute;
-  bottom: 0;
+  margin-top: auto;
   min-width: 100%;
   background: #ffffff;
   padding: 1rem 0;
-  margin-top: 1rem;
   -webkit-box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.3);
 }

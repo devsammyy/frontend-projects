@@ -19,17 +19,16 @@ h4 {
 body {
     background: #f4f4f4;
     font-family: "Poppins";
-    min-width: 100%;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
+    margin-top: auto;
     min-width: 100%;
     background: #ffffff;
     padding: 1rem 0;
-    margin-top: 1rem;
     @include box-shadow(0px, 0px, 9px);
     .down-nav {
         display: block;
