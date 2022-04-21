@@ -66,20 +66,25 @@ body {
   background: #f4f4f4;
   font-family: "Poppins";
   min-width: 100%;
+  min-height: 100vh;
 }
 
-.down-nav {
-  display: block;
-  position: fixed;
-  top: calc(100% - 70px);
-  background: #ffffff;
+footer {
+  position: absolute;
+  bottom: 0;
   min-width: 100%;
+  background: #ffffff;
   padding: 1rem 0;
+  margin-top: 1rem;
   -webkit-box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.3);
 }
 
-.down-nav ul {
+footer .down-nav {
+  display: block;
+}
+
+footer .down-nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -93,7 +98,7 @@ body {
   list-style: none;
 }
 
-.down-nav ul li a {
+footer .down-nav ul li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -110,7 +115,7 @@ body {
   font-size: 1.2rem;
 }
 
-.down-nav ul li a p {
+footer .down-nav ul li a p {
   font-size: 10px;
   margin-top: 2px;
 }
@@ -202,7 +207,7 @@ ul {
     gap: 1em;
     margin-left: auto;
   }
-  .down-nav {
+  footer {
     display: none;
   }
 }

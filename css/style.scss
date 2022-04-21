@@ -20,37 +20,39 @@ body {
     background: #f4f4f4;
     font-family: "Poppins";
     min-width: 100%;
+    min-height: 100vh;
 }
 
-
-.down-nav {
-    display: block;
-    position: fixed;
-    top: calc(100% - 70px);
-    background: #ffffff;
+footer {
+    position: absolute;
+    bottom: 0;
     min-width: 100%;
+    background: #ffffff;
     padding: 1rem 0;
+    margin-top: 1rem;
     @include box-shadow(0px, 0px, 9px);
-    ul {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
-        list-style: none;
+    .down-nav {
+        display: block;
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            list-style: none;
 
-        li {
-            a {
+            li {
+                a {
 
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                align-items: center;
-                font-size: 1.2rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    font-size: 1.2rem;
 
-                p {
-                    // font-family: 'priola';
-                    font-size: 10px;
-                    margin-top: 2px;
+                    p {
+                        font-size: 10px;
+                        margin-top: 2px;
+                    }
                 }
             }
         }
