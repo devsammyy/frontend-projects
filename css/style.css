@@ -59,21 +59,22 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: 'Arvo';
+  font-family: 'Montserrat';
 }
 
 body {
   background: #f4f4f4;
   font-family: "Poppins";
+  min-width: 100%;
 }
 
 .down-nav {
   display: block;
-  position: absolute;
-  bottom: 0;
+  position: fixed;
+  top: calc(100% - 70px);
   background: #ffffff;
   min-width: 100%;
-  padding-block: 1rem;
+  padding: 1rem 0;
   -webkit-box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.3);
 }
@@ -88,7 +89,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 1.5rem;
+  gap: 2rem;
   list-style: none;
 }
 
@@ -142,7 +143,7 @@ a {
 .secondary {
   border: 1px solid #0051ff;
   border-radius: 2rem;
-  padding-inline: .5em;
+  padding: 0 .5rem;
   font-weight: 900;
   -webkit-transition: ease .5s;
   transition: ease .5s;
@@ -158,12 +159,6 @@ a {
 
 ul {
   list-style: none;
-}
-
-@media screen and (min-width: 280px) {
-  .down-nav ul {
-    gap: 1.5rem;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -192,7 +187,7 @@ ul {
         -ms-flex-pack: center;
             justify-content: center;
     gap: 1em;
-    min-width: 60%;
+    min-width: 50%;
     margin-inline: auto;
   }
   .left-nav > *:hover a, .left-nav > *:active a {

@@ -12,27 +12,30 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: 'Arvo';
+    font-family: 'Montserrat';
 
 }
 
 body {
     background: #f4f4f4;
     font-family: "Poppins";
+    min-width: 100%;
 }
+
+
 .down-nav {
     display: block;
-    position: absolute;
-    bottom: 0;
+    position: fixed;
+    top: calc(100% - 70px);
     background: #ffffff;
     min-width: 100%;
-    padding-block: 1rem;
+    padding: 1rem 0;
     @include box-shadow(0px, 0px, 9px);
     ul {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 1.5rem;
+        gap: 2rem;
         list-style: none;
 
         li {
@@ -81,7 +84,7 @@ a {
 .secondary {
     border: 1px solid rgb(0, 81, 255);
     border-radius: 2rem;
-    padding-inline: .5em;
+    padding: 0 .5rem;
     font-weight: 900;
     transition: ease .5s;
 
@@ -97,4 +100,6 @@ a {
 ul {
     list-style: none;
 }
+
+
 @import 'media';
