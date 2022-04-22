@@ -26,10 +26,10 @@ body {
 
     section {
         background: #ffffff;
-        padding: 1.5em;
+        padding: 1.4em;
         border-radius: .5em;
         @include box-shadow(2px, 2px, 5px);
-        }
+    }
 }
 
 @import 'footer';
