@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Header = () => {
+    const [isNav, setIsNav] = useState(false);
+    const [toggleNav, setToggleNav] = useState(false);
     return (
         <header>
             <h2 className='com-logo'>
@@ -13,7 +15,7 @@ const Header = () => {
                         <a href='#'>Home</a>
                     </li>
                     <li>
-                        <a href='#'>About</a>
+                        <a href='#'>About us</a>
                     </li>
                     <li>
                         <a href='#'>Services</a>
