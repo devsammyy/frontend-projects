@@ -1,0 +1,59 @@
+@import 'header';
+@import 'header';
+@import 'mixins';
+@import 'custom';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    position: relative;
+    background: #f4f4f4;
+    font-family: "Poppins";
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.section-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: .5rem;
+
+    section {
+        background: #ffffff;
+        padding: 1.5em;
+        border-radius: .5em;
+        @include box-shadow(2px, 2px, 5px);
+    }
+}
+
+.table-container {
+    margin-bottom: 1.5rem;
+
+    h1 {
+        padding: .5rem;
+    }
+
+    table {
+        padding: .5rem;
+
+    }
+
+    th,
+    td {
+        padding: .6rem;
+        text-align: left;
+    }
+}
+
+@import 'footer';
+@import 'media';
