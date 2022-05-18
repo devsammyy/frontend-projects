@@ -30,10 +30,11 @@ body {
 
     section {
         background: #ffffff;
-        padding: 1.5em;
+        padding: 1.4em;
         border-radius: .5em;
         @include box-shadow(2px, 2px, 5px);
     }
+<<<<<<<< HEAD:bravo/src/css/style.scss
 }
 
 .table-container {
@@ -53,6 +54,8 @@ body {
         padding: .6rem;
         text-align: left;
     }
+========
+>>>>>>>> 528a26bfbcda95d4662ae3532c838f2a53959ab3:Data-bundle-reseller/css/style.scss
 }
 
 @import 'footer';
