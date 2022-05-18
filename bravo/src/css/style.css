@@ -193,12 +193,17 @@ body {
 
 .table-container table {
   padding: .5rem;
+  width: 100%;
 }
 
 .table-container th,
 .table-container td {
   padding: .6rem;
   text-align: left;
+}
+
+.table-container td:nth-child(1) {
+  font-weight: 500;
 }
 
 footer {
